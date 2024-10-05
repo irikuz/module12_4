@@ -1,0 +1,14 @@
+2024-10-05 14:17:52,004 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "/Users/Shared/Previously Relocated Items/Security/Рабочая/Pyton/module12/tests_12_4.py", line 66, in test_run
+    r2 = Runner(name=6, speed=10)
+  File "/Users/Shared/Previously Relocated Items/Security/Рабочая/Pyton/module12/tests_12_4.py", line 9, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-10-05 14:17:52,004 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "/Users/Shared/Previously Relocated Items/Security/Рабочая/Pyton/module12/tests_12_4.py", line 56, in test_wolk
+    r1 = Runner('Boris', -10)
+  File "/Users/Shared/Previously Relocated Items/Security/Рабочая/Pyton/module12/tests_12_4.py", line 14, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -10
